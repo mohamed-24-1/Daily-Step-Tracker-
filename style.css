@@ -1,0 +1,59 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0; padding: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg,#6a11cb,#2575fc);
+  display:flex; flex-direction: column; align-items:center;
+  color:#fff;
+}
+
+nav {
+  display:flex; justify-content:center; flex-wrap:wrap;
+  background: rgba(255,255,255,0.2); backdrop-filter: blur(10px);
+  padding:10px; border-radius:12px; margin:15px 0;
+}
+
+nav a { margin: 0 15px; color:#fff; text-decoration:none; font-weight:600; transition:0.3s;}
+nav a:hover { color:#ffeb3b; transform:scale(1.05); }
+
+.box {
+  background: rgba(255,255,255,0.2); backdrop-filter: blur(15px);
+  padding:30px 25px; width:90%; max-width:400px; margin:20px auto;
+  border-radius:20px; box-shadow:0 8px 25px rgba(0,0,0,0.15);
+  display:flex; flex-direction:column; align-items:center;
+  transition:0.3s; text-align:center;
+}
+.box:hover { transform:translateY(-5px); box-shadow:0 12px 35px rgba(0,0,0,0.2); }
+
+input {
+  padding:12px; width:95%; margin-bottom:15px; border:none; border-radius:12px;
+  text-align:center; font-size:16px; outline:none; background: rgba(255,255,255,0.4); color:#333;
+  transition:0.3s;
+}
+input:focus { background: rgba(255,255,255,0.6); box-shadow:0 0 8px #fff; }
+
+button {
+  padding:12px 25px; border:none; border-radius:12px;
+  background: linear-gradient(45deg,#ff9800,#ff5722);
+  color:#fff; font-weight:600; font-size:16px; cursor:pointer;
+  transition:0.2s;
+}
+button:hover { transform:translateY(-2px); box-shadow:0 6px 15px rgba(0,0,0,0.3); }
+
+.progress-container {
+  width:90%; background: rgba(255,255,255,0.3); border-radius:20px; height:25px; overflow:hidden; margin:10px 0;
+}
+.progress-bar {
+  height:100%; width:0%; background: linear-gradient(90deg,#ffeb3b,#ff5722);
+  text-align:center; line-height:25px; font-weight:bold; color:#333; transition: width 0.5s ease-in-out;
+}
+
+#historyList li {
+  background: rgba(255,255,255,0.3); margin:5px 0; padding:10px 15px; border-radius:12px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.1); font-weight:600; color:#fff;
+}
+
+@media screen and (max-width:500px){
+  .box { width:95%; padding:20px 15px; }
+  input, button { font-size:16px; padding:10px; }
+}

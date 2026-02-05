@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Steps</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Add Your Steps</h2>
+
+<nav>
+  <a href="index.html">Set Goal</a>
+  <a href="add-steps.html">Add Steps</a>
+  <a href="progress.html">Progress</a>
+  <a href="history.html">History</a>
+  <a href="about.html">About</a>
+</nav>
+
+<div class="box">
+  <input type="number" id="stepInput" placeholder="Steps walked">
+  <button onclick="addSteps()">Add Steps</button>
+  <p id="stepMessage"></p>
+</div>
+
+<script src="script.js"></script>
+<script>
+  // Auto-focus input on page load
+  document.getElementById("stepInput").focus();
+</script>
+</body>
+</html>
